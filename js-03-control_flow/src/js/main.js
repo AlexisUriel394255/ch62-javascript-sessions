@@ -47,8 +47,31 @@ const Niveltemperatura = (temperatura) =>{
 console.log(Niveltemperatura(25));
 
 
+
 /**
  * Realizar una funcion que reciba el valor booleano si una persona esta feliz o no
  * Si la persona esta feliz, mostrar en la interfaz de usuario la imagen "public/images/dino.jpg"
  * En caso
  */
+/*
+     Realizar una función que reciba un código(weatherCode) de temperatura.
+     De acuerdo al código recibo, retornar un mensaje:
+     Code   Description
+    0           Clear sky
+    1, 2, 3     Mainly clear, partly cloudy, and overcast
+    45, 48      Fog and depositing rime fog
+    
+*/
+const weatherCode = (code) =>{
+    if (code ===0) {
+        return "Clear sky";
+    }else if(code === 1 || code === 2 || code==3){
+        return"Mainly clear, partly cloudy, and overcast";
+    }else if(code === 45 || code === 48){
+          return"Fog and depositing rime fog";
+    }else{
+        return "mensaje no definido";
+    }
+}
+console.log(weatherCode(45));
+
