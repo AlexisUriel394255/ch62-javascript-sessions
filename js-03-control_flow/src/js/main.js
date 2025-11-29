@@ -76,11 +76,10 @@ const weatherCode = (code) =>{
 console.log(weatherCode(45));
 let img = document.getElementById("imagen");
 
-const EstadoAnimo = emocion  =>{
-    if(emocion){
+const estadoAnimo = emocion  =>{
+    if(emocion===true){
     img.src = "public/images/dino.jpg";
     }else{
          img.src = "public/images/dino-emo.png";
     }
 }
-console.log(EstadoAnimo(false));
